@@ -32,7 +32,7 @@ function createLampGrid() {
 
 function lightUp() {
 
-    selectedLampIndex = Math.floor(Math.random() * 24);
+    selectedLampIndex = Math.floor(Math.random() * lampGrid.length);
 
     if(selectedLampIndex != previousLampIndex){
         finishTime = new Date().getTime();
